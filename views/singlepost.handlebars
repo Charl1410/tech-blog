@@ -1,13 +1,17 @@
 
 <div class="card-container">
-    <div class="card">
+    <div class="card card-margin">
             <p class="blog-title"><a href="{{post.id}}">{{post.post_title}}</a></p>
             <p>{{post.date_created}}</p>
             <p class="posted-by">Posted by {{post.user.name}}</p>
 
 
             <p>{{post.post_content}}</p>        
-                
+                 <div class="interaction-bar">
+        <button class="view-comment-btn" id="{{post.id}}"> View Comments</button>
+      
+    </div>
+
 
             {{#if logged_in}}
             <div class="comment-section" id="comment-section">
@@ -29,3 +33,5 @@
     </div>
 </div>
 <script src="../js/comment.js" ></script>
+
+<script type="text/javascript" src="../js/index.js"></script>
