@@ -1,0 +1,27 @@
+<div class="card">
+                <p class="blog-title"><a href="/post{{id}}"></a>{{post_title}}</p>
+                <p class="spacing">{{format_date date_created}}</p>
+                <p class="posted-by">{{user.name}}</p>
+    
+                <p>{{post_content}}</p>        
+                <!-- <div class="interaction-bar">
+                    <button>Comment</button>  
+                </div>  -->
+                
+
+                  <div class="comment-section" id="comment-section">
+                        <div>
+                            <input class="create-comment" id="comment_{{id}}" type="text" placeholder="Create your own comment" />
+                            <button type="button" class="new-comment-form" id="comment_button_{{id}}">Create</button>
+                        </div>
+                        
+
+                        <div class="loaded-comments-container">
+                        
+                                {{#each post.comments as |comment|}}
+                                    <p class="loaded-comments">{{comment.user.name}}: {{comment.text}}</p>
+                                {{/each}}                            
+                        </div>
+        
+                  </div>
+</div>
