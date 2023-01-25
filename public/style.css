@@ -1,0 +1,117 @@
+* {
+    padding:0;
+    margin:0;
+    background-color: rgb(247, 239, 229);
+}
+
+.title, .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    position: fixed;
+    top:0;
+    width:100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: rgb(247, 239, 229);
+    opacity: 70%;
+}
+
+nav li {
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 100%;
+    margin-left: 9%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(247, 239, 229) ;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    background-color:rgb(247, 239, 229);
+}
+
+
+nav {
+    border-bottom: dotted 1px rgb(255, 255, 255);
+    height:10vh;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 150;
+    color: black;
+    height:20vh;
+    text-align: center;
+    font-size: 300%;
+}
+
+.card {
+    width:35%;
+    margin:1%;
+    border: solid 5px white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+    padding:3%;
+    box-shadow: 10px 0 10px 0 grey;
+}
+
+.card-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:rgb(229, 224, 255);
+    border-radius: 10px;
+      
+}
+
+button {
+    background-image: linear-gradient( rgb(233, 218, 200), rgb(161, 151, 213));
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: Montserrat,sans-serif;
+    font-size: .9em;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+  }
+
+  .comment-section {
+    border-top: solid 2px white;
+    width:80%;
+    padding:3%;
+    margin-top:2%;
+}
+
+input {
+   
+    width:100%;
+    resize: vertical;
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px gray;
+    height:10px;
+  }
+

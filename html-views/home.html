@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Public/style.css">
+
     <title>Tech Blog</title>
 
 </head>
@@ -12,10 +14,12 @@
         <nav>
             <ul>
             
-              <li><a class="active" href="#">Sign In</a></li>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a class="active" href="#">Dashboard</a></li>
+              <li><a class="active" href="#">Log in</a></li>
+              <li><a class="active" href="#">Log out</a></li>
               <li><a class="active" href="#">Create account</a></li>
-              <li><a class="active" href="#">Profile</a></li>
-              <li><a class="active" href="#">Features</a></li>
+
             </ul>
            
           </nav>
@@ -31,17 +35,25 @@
                 <p class="posted-by">By: Charlotte Griffin</p>
     
                 <p>Content.</p>        
-                <div class="interaction-bar">
+                <!-- <div class="interaction-bar">
                     <button>Comment</button>  
-                </div> 
+                </div>  -->
                 
-                <div>
-                  <textarea class="create-comments">Create your own comment</textarea> <button>Add Comment</button>     
-               </div>
-    
-               <div class="loaded-comments-container">
-                  <p class="loaded-comments">Comment 1</p>
-               </div>
+
+    <div class="comment-section" id="comment-section">
+                        <div>
+                            <input class="create-comment" id="comment_{{id}}" type="text" placeholder="Create your own comment" />
+                            <button type="button" class="new-comment-form" id="comment_button_{{id}}">Create</button>
+                        </div>
+                        
+
+                        <div class="loaded-comments-container">
+                        
+                            <p class="loaded-comments">loaded comment</p>
+                            
+                        </div>
+        
+    </div>
           </div>
 
           </div>
