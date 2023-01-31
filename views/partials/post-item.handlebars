@@ -3,11 +3,12 @@
                 <p class="spacing">{{format_date date_created}}</p>
                 <p class="posted-by">{{user.name}}</p>
     
-                <p>{{post_content}}</p>        
-                <!-- <div class="interaction-bar">
-                    <button>Comment</button>  
-                </div>  -->
+                <p>{{post_content}}</p>
+                <div class="interaction-bar">
+                    <button class="view-comment-btn" id="{{id}}"> View Comments</button>
                 
+                </div>
+
 
                   <div class="comment-section" id="comment-section">
                         <div>
