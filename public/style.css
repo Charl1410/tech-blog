@@ -4,6 +4,8 @@
     background-color: rgb(247, 239, 229);
 }
 
+/* homepage and main styling */
+
 .title, .card {
     display: flex;
     flex-direction: column;
@@ -79,6 +81,20 @@ nav {
       
 }
 
+.blog-title {
+    font-size: 250%;
+    padding:2%;
+}
+
+.posted-by {
+    font-size: 150%;
+}
+
+
+.spacing {
+    margin: 1%;
+}
+
 button {
     background-image: linear-gradient( rgb(233, 218, 200), rgb(161, 151, 213));
     border: 0;
@@ -97,11 +113,21 @@ button {
     
   }
 
+/* comment styling */
+
   .comment-section {
     border-top: solid 2px white;
     width:80%;
     padding:3%;
     margin-top:2%;
+    display:none;
+}
+
+.loaded-comments {
+    border-bottom: solid 1px rgb(203, 200, 200);
+    margin-top:2%;
+
+
 }
 
 input {
