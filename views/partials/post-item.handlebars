@@ -18,8 +18,8 @@
 
                         <div class="loaded-comments-container">
                         
-                                {{#each post.comments as |comment|}}
-                                    <p class="loaded-comments">{{comment.user.name}}: {{comment.text}}</p>
+                                {{#each comments as |comment|}}
+                                    <p class="loaded-comments">{{user.name}}: {{comment.text}}</p>
                                 {{/each}}                            
                         </div>
         
