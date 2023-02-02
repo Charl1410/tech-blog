@@ -4,6 +4,13 @@
     background-color: rgb(247, 239, 229);
 }
 
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* homepage and main styling */
 
 .title, .card {
@@ -22,7 +29,7 @@ ul {
     justify-content: center;
     align-items: center;
     height: 5vh;
-    background-color: rgb(247, 239, 229);
+    background-color: rgb(232, 207, 176);
     opacity: 70%;
 }
 
@@ -35,19 +42,19 @@ nav li {
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(247, 239, 229) ;
+    background-color:rgb(232, 207, 176) ;
 }
 
 nav li a {
     text-decoration: none;
     color: black;
-    background-color:rgb(247, 239, 229);
+    background-color:rgb(232, 207, 176);
 }
 
 
 nav {
-    border-bottom: dotted 1px rgb(255, 255, 255);
-    height:10vh;
+    border-bottom: dotted 1px rgb(232, 207, 176);
+    height:5vh;
 }
 
 .title {

@@ -73,8 +73,8 @@ router.get("/post/:id", async (req, res) => {
 //route to serve up the login page 
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
-    // if they are logged in redirect to the profile page
-    res.redirect('/profile');
+    // if they are logged in redirect to the dashboard page
+    res.redirect('/dashboard');
     return;
   }
   res.render('login');
@@ -83,16 +83,17 @@ router.get('/login', (req, res) => {
 //route to serve up the signup page 
 router.get('/signup', (req, res) => {
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect('/dashboard');
     return;
   }
   res.render('signup');
 });
 
-//route to serve up the profile page 
-router.get('/profile', withAuth, async (req, res) => {
+//route to serve up the dashboard (profile) page 
+router.get('/dashboard', withAuth, async (req, res) => {
   console.log("yo")
   try {
+    
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [
@@ -105,7 +106,7 @@ router.get('/profile', withAuth, async (req, res) => {
     const user = userData.get({ plain: true });
     console.log(user)
 
-    res.render('profile', {
+    res.render('dashboard', {
       ...user,
       logged_in: true
     });

@@ -1,0 +1,29 @@
+  <div id="body-container">
+                <aside class="aside-left">
+                    <header class="profile-header">
+                        <h2 class="profile-name">Hi {{name}} welcome to your dashboard!</h2>
+                    
+                <div class="saved-post-container">
+                        
+                        <form id="profile-form-style" class="form new-post-form">
+                            <h1>Create a new post</h1>
+                            <input class="post-title" id="post-name" type="text" placeholder="Post name" />
+                            <input class="post-content" id="post-desc" type="text" placeholder="What do you want to post?" />
+                            <button type="submit" id="create-post">Create post</button>
+                        </formid=class=>
+                        
+                        <h1>View your previous posts!!</h1>
+                                    
+                            <div class="profile-post-container">
+                                {{#each posts as |post|}}
+                                {{> post-item}} 
+                                {{/each}}
+                            </div>
+                </div>
+        </div>
+
+
+<script src="../js/postcreate.js" ></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script src="../js/comment.js"></script>
+
