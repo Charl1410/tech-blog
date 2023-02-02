@@ -4,7 +4,7 @@
     background-color: rgb(247, 239, 229);
 }
 
-.d-flex {
+.d-flex, #profile-form-style, #form-style {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,4 +182,33 @@ form input {
     text-align: center;
     align-items: center;
     font-size: 130%;
+  }
+
+  /* Dashboard styling */
+  #profile-form-style, #form-style {
+    margin: 7%;
+    padding: 3%;
+    border: solid 2px #a1ccc8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lightgrey;
+    flex-direction: column;
+    font-size: 130%;
+
+}
+
+.post-title {
+    padding:2%;
+    margin-bottom: 2%;
+    width:80%;
+}
+
+.post-content  {
+    width:100%;
+    resize: vertical;
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px grey;
+    height:150px;
+    width:80%;
   }
