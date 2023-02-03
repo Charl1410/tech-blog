@@ -17,7 +17,7 @@ const newPostHandler = async (event) => {
       // console.log(name, description + "console log 2")
 
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/dashboard');
       } else {
         alert(response.statusText);
       }
