@@ -37,7 +37,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-//get request for indivudla posts 
+//get request for individual  posts 
 router.get("/post/:id", async (req, res) => {
   try {
 //finding the post by priamry key
@@ -56,8 +56,7 @@ router.get("/post/:id", async (req, res) => {
     });
 
     const post = postData.get({ plain: true });
-    console.log(post,"this is before the render");
-
+    //renders the data from the single post through the singlepost hbs template 
     res.render("singlepost", {
      
       post,
