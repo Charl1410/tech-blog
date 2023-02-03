@@ -31,6 +31,13 @@ Comment.init(
         model: 'post',
         key: 'id',
       },
+      
+      date_created: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        // this needs to be changed day.js, mentioned by jason
+        defaultValue: DataTypes.NOW,
+      },
     },
   },
   {

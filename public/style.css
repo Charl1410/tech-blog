@@ -4,7 +4,7 @@
     background-color: rgb(247, 239, 229);
 }
 
-.d-flex, #profile-form-style, #form-style {
+.d-flex, #profile-form-style, #form-style, footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,3 +212,15 @@ form input {
     height:150px;
     width:80%;
   }
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 150;
+    color: black;
+    height:20vh;
+    font-size: 150%;
+}
+
+footer a {
+    text-decoration: none;
+}

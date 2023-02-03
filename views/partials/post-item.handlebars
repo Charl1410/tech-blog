@@ -13,14 +13,14 @@
                   <div class="comment-section" id="comment-section">
                         <div>
                             <input class="create-comment" id="comment_{{id}}" type="text" placeholder="Create your own comment" />
-                            <button type="button" class="new-comment-form" id="comment_button_{{id}}">Create</button>
+                            <button type="button" class="new-comment-button" id="comment_button_{{id}}">Create</button>
                         </div>
                         
 
                         <div class="loaded-comments-container">
                         
                                 {{#each comments as |comment|}}
-                                    <p class="loaded-comments">{{user.name}}: {{comment.text}}</p>
+                                    <p class="loaded-comments">{{format_date created_at}} {{user.name}}: {{comment.text}}</p>
                                 {{/each}}                            
                         </div>
         

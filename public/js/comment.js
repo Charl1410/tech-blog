@@ -31,7 +31,7 @@ const newCommentHandler = async (event) => {
   }
 };
 
-const forms = document.querySelectorAll('.new-comment-form');
+const forms = document.querySelectorAll('.new-comment-button');
 forms.forEach((form) => {
   form.addEventListener('click', newCommentHandler);
 });
