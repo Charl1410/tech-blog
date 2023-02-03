@@ -79,6 +79,12 @@ nav {
     box-shadow: 10px 0 10px 0 grey;
 }
 
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .card-container{
     display:flex;
     justify-content: center;
@@ -198,7 +204,7 @@ form input {
 }
 
 .profile-header{
-    
+
 }
 
 .profile-name {
