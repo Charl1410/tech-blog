@@ -61,10 +61,10 @@ nav {
     font-family: 'Open Sans', sans-serif;
     font-weight: 150;
     color: black;
-    height:25vh;
     text-align: center;
     font-size: 200%;
     padding:1%;
+    margin:1%;
 }
 
 .card {
@@ -79,6 +79,9 @@ nav {
     box-shadow: 10px 0 10px 0 grey;
 }
 
+.single-post.card {
+
+}
 
 .card:hover {
     transform: scale(1.1);
@@ -92,6 +95,7 @@ nav {
     flex-wrap: wrap;
     background-color:rgb(229, 224, 255);
     border-radius: 10px;
+    width:100%;
       
 }
 
@@ -201,6 +205,10 @@ form input {
     flex-direction: column;
     font-size: 130%;
 
+}
+
+#body-container{
+width:100%;
 }
 
 .profile-header{

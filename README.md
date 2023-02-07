@@ -1,4 +1,7 @@
-# 14 Model-View-Controller (MVC): Tech Blog
+#body-container{
+    display:flex;
+
+}# 14 Model-View-Controller (MVC): Tech Blog
 
 ## Your Task
 

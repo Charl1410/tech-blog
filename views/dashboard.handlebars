@@ -13,8 +13,13 @@
                         </formid=class=>
                         
                         <h1>View your previous posts!!</h1>
-                                    
-                            <div class="profile-post-container">
+
+                        <aside>
+                            <p>delete your posts here</p>
+                        </aside>
+
+
+                            <div class="card-container"> 
                                 {{#each posts as |post|}}
                                 {{> post-item}} 
                                 {{/each}}

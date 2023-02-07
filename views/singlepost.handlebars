@@ -1,12 +1,12 @@
 <div class="card">
-                <p class="blog-title"><a href="/post{{post.id}}"></a>{{post.post_title}}</p>
+                <p class="blog-title"><a href="/post/{{post.id}}"></a>{{post.post_title}}</p>
                 <p class="spacing">{{format_date post.date_created}}</p>
                 <p class="posted-by">{{post.user.name}}</p>
     
                 <p>{{post.post_content}}</p>        
-                <!-- <div class="interaction-bar">
-                    <button>Comment</button>  
-                </div>  -->
+                <div class="interaction-bar">
+                    <button class="view-comment-btn" id="{{id}}"> View Comments</button>
+                </div>
                 
 
                   <div class="comment-section" id="comment-section">
@@ -27,3 +27,5 @@
 </div>
 
 <script src="../js/comment.js" ></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
