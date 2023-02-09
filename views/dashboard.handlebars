@@ -21,7 +21,7 @@
 
                             <div class="card-container"> 
                                 {{#each posts as |post|}}
-                                {{> post-item}} 
+                                    {{> post-item isOwner=post.isOwner}}    
                                 {{/each}}
                             </div>
                 </div>

@@ -12,7 +12,7 @@
         <div class="card-container">
             
                 {{#each posts as |post|}}
-                {{> post-item isOwner=isOwner}} 
+                  {{> post-item isOwner=post.isOwner}} 
                  {{/each}}      
         </div>
 

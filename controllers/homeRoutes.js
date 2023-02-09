@@ -23,8 +23,12 @@ router.get("/", async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const posts = postData.map((post) => post.get({ plain: true }));
-    console.log(posts);
+    const posts = postData.map((post) => {
+      const plainPost = post.get({ plain: true });
+      plainPost.isOwner = req.session.user_id === plainPost.user_id;
+      return plainPost;
+    });
+        console.log(posts);
 
     //rendering through the homepage handlebars passing in posts data
     //passing through logged in data
