@@ -1,4 +1,8 @@
 <div class="card">
+                        {{#if isOwner}}
+                            <button>Edit Post</button>
+                        {{/if}}
+                        
                 <p class="blog-title"><a href="/post/{{id}}">{{post_title}}</a></p>
                 <p class="spacing">{{format_date date_created}}</p>
                 <p class="posted-by spacing">{{user.name}}</p>
@@ -25,6 +29,8 @@
                                     <p class="loaded-comments">{{format_date created_at}} {{user.name}}: {{comment.text}}</p>
                                 {{/each}}                            
                         </div>
+
+                        
         
                   </div>
 </div>

@@ -1,4 +1,9 @@
 <div class="card">
+
+                         {{#if isOwner}}
+                            <button>Edit Post</button>
+                        {{/if}}
+                        
                 <p class="blog-title"><a href="/post/{{post.id}}"></a>{{post.post_title}}</p>
                 <p class="spacing">{{format_date post.date_created}}</p>
                 <p class="posted-by">{{post.user.name}}</p>

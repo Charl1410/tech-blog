@@ -61,6 +61,7 @@ router.get("/post/:id", async (req, res) => {
      
       post,
       logged_in: req.session.logged_in,
+      isOwner: req.session.user_id === post.user_id,
       
     });
     console.log(post,"this is after the render");
