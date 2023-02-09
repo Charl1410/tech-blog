@@ -26,7 +26,7 @@
                         <div class="loaded-comments-container">
                         
                                 {{#each comments as |comment|}}
-                                    <p class="loaded-comments">{{format_date created_at}} {{user.name}}: {{comment.text}}</p>
+                                    <p class="loaded-comments">{{format_date comment.date_created}} {{user.name}}: {{comment.text}}</p>
                                 {{/each}}                            
                         </div>
 

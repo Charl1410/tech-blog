@@ -24,6 +24,13 @@ Comment.init(
       },
     },
 
+    date_created: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      // this needs to be changed day.js, mentioned by jason
+      defaultValue: DataTypes.NOW,
+    },
+
     post_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -32,12 +39,7 @@ Comment.init(
         key: 'id',
       },
       
-      date_created: {
-        type: DataTypes.DATE,
-        allowNull: false,
-        // this needs to be changed day.js, mentioned by jason
-        defaultValue: DataTypes.NOW,
-      },
+     
     },
   },
   {
