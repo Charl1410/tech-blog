@@ -30,7 +30,9 @@ router.get("/", async (req, res) => {
     //passing through logged in data
     res.render("homepage", {
       posts,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      isOwner: req.session.user_id === posts.user_id,
+
     });
   } catch (err) {
     res.status(500).json(err);

@@ -4,7 +4,8 @@
     background-color: rgb(247, 239, 229);
 }
 
-.d-flex, #profile-form-style, #form-style, footer {
+.d-flex, #profile-form-style, #form-style, footer, 
+.title, .card, .profile-name{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,12 +14,6 @@
 
 /* homepage and main styling */
 
-.title, .card, .profile-name{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 ul {
     position: fixed;

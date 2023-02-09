@@ -1,34 +1,37 @@
-<div class="card">
-
-                         {{#if isOwner}}
-                            <button>Edit Post</button>
-                        {{/if}}
-                        
-                <p class="blog-title"><a href="/post/{{post.id}}"></a>{{post.post_title}}</p>
-                <p class="spacing">{{format_date post.date_created}}</p>
-                <p class="posted-by">{{post.user.name}}</p>
+<div clas="card-container">
     
-                <p>{{post.post_content}}</p>        
-                <div class="interaction-bar">
-                    <button class="view-comment-btn" id="{{id}}"> View Comments</button>
-                </div>
+        <div class="card">
+
+                                {{#if isOwner}}
+                                    <button>Edit Post</button>
+                                {{/if}}
+                                
+                        <p class="blog-title"><a href="/post/{{post.id}}"></a>{{post.post_title}}</p>
+                        <p class="spacing">{{format_date post.date_created}}</p>
+                        <p class="posted-by">{{post.user.name}}</p>
+            
+                        <p>{{post.post_content}}</p>        
+                        <div class="interaction-bar">
+                            <button class="view-comment-btn" id="{{id}}"> View Comments</button>
+                        </div>
+                        
+
+                        <div class="comment-section" id="comment-section">
+                                <div>
+                                    <input class="create-comment" id="comment_{{id}}" type="text" placeholder="Create your own comment" />
+                                    <button type="button" class="new-comment-form" id="comment_button_{{id}}">Create</button>
+                                </div>
+                                
+
+                                <div class="loaded-comments-container">
+                                
+                                        {{#each post.comments as |comment|}}
+                                            <p class="loaded-comments">{{comment.user.name}}: {{comment.text}}</p>
+                                        {{/each}}                            
+                                </div>
                 
-
-                  <div class="comment-section" id="comment-section">
-                        <div>
-                            <input class="create-comment" id="comment_{{id}}" type="text" placeholder="Create your own comment" />
-                            <button type="button" class="new-comment-form" id="comment_button_{{id}}">Create</button>
                         </div>
-                        
-
-                        <div class="loaded-comments-container">
-                        
-                                {{#each post.comments as |comment|}}
-                                    <p class="loaded-comments">{{comment.user.name}}: {{comment.text}}</p>
-                                {{/each}}                            
-                        </div>
-        
-                  </div>
+        </div>
 </div>
 
 <script src="../js/comment.js" ></script>
