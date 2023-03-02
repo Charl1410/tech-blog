@@ -8,7 +8,7 @@ const updateFormHandler = async (event) => {
       const postContent = document.querySelector(".post-content").value.trim();
       const titletUpdate = document.querySelector(".post-title").value.trim();
       console.log({id})
-      const response = await fetch(`/post/${id}`, {
+      const response = await fetch(`/api/post/${id}`, {
         method: "PUT",
         body: JSON.stringify({
           post_title: titletUpdate,
@@ -33,7 +33,7 @@ const updateFormHandler = async (event) => {
   const deletePost = async (event) => {
     if (event.target.hasAttribute("data-id")) {
       const postId = event.target.getAttribute("data-id");
-      const response = await fetch(`/post/${postId}`, {
+      const response = await fetch(`/api/post/${postId}`, {
         method: "DELETE",
         body: JSON.stringify({
           id: postId,
