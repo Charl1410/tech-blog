@@ -58,7 +58,7 @@ router.get("/post/:id", async (req, res) => {
           attributes: ["text", "date_created"],
           include: [{ model: User, attributes: ["name"] }],
         },
-      ],
+      ]
     });
 
     const post = postData.get({ plain: true });
@@ -127,10 +127,10 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
 
 //Update Post
-router.put("/:id", withAuth, async (req, res) => {
+router.put("post/:id", withAuth, async (req, res) => {
   try {
     const updatePost = {
-      title: req.body.title,
+      post_title: req.body.title,
       post_content: req.body.post_content,
     };
 
