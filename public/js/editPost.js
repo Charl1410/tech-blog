@@ -55,7 +55,7 @@ const updateFormHandler = async (event) => {
     }
   };
   
-  document.querySelector("#delete-post").addEventListener("click", deletePost);
+  document.querySelector("#delete-btn").addEventListener("click", deletePost);
   
   document
     .querySelector("#update-post")

@@ -202,6 +202,14 @@ form input {
 
 }
 
+.edit-post-form {
+    padding: 5%;
+}
+
+#delete-btn {
+   margin: 2%;
+}
+
 #body-container{
 width:100%;
 }

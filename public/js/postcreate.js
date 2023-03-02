@@ -24,24 +24,24 @@ const newPostHandler = async (event) => {
     }
   };
   
-  // const delButtonHandler = async (event) => {
-  //   if (event.target.hasAttribute('data-id')) {
-  //     const id = event.target.getAttribute('data-id');
+  const delButtonHandler = async (event) => {
+    console.log('hello')
+    if (event.target.hasAttribute('data-id')) {
+      const id = event.target.getAttribute('data-id');
   
-  //     const response = await fetch(`/api/projects/${id}`, {
-  //       method: 'DELETE',
-  //     });
+      const response = await fetch(`/api/posts/${id}`, {
+        method: 'DELETE',
+      });
   
-  //     if (response.ok) {
-  //       document.location.replace('/profile');
-  //     } else {
-  //       alert('Failed to delete project');
-  //     }
-  //   }
-  // };
+      if (response.ok) {
+        document.location.replace('/dashboard');
+      } else {
+        alert('Failed to delete post');
+      }
+    }
+  };
   
   document.querySelector('.new-post-form').addEventListener('submit', newPostHandler);
   
-  //document.querySelector('.project-list').addEventListener('click', delButtonHandler);
+  document.querySelector('#delete-btn').addEventListener('click', delButtonHandler);
   
-//document.querySelector('')
