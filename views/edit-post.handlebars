@@ -8,6 +8,22 @@
                                                         <button  data-id="{{id}}" id="delete-post">Delete post</button>
 
                         </form>    
+
+                              <div class="comment-section" id="comment-section">
+                                <div>
+                                    <input class="create-comment" id="comment_{{id}}" type="text" placeholder="Create your own comment" />
+                                    <button type="button" class="new-comment-form" id="comment_button_{{id}}">Create</button>
+                                </div>
+                                
+
+                                <div class="loaded-comments-container">
+                                
+                                        {{#each post.comments as |comment|}}
+                                            <p class="loaded-comments">{{comment.user.name}}: {{comment.text}}</p>
+                                        {{/each}}                            
+                                </div>
+                
+                        </div>
 </div>
 
 
