@@ -115,7 +115,9 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
     res.render('dashboard', {
       ...user,
-      logged_in: true
+      logged_in: true,
+      //isOwner: req.session.user_id === posts.user_id,
+
     });
 
   } catch (err) {
@@ -143,6 +145,27 @@ router.put("/:id", withAuth, async (req, res) => {
       return;
     }
     res.status(200).json(postData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+//edit post route 
+router.get("/post/:id/edit", withAuth, async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: { exclude: ["password"] },
+        },
+      ],
+    });
+    const post = postData.get({ plain: true });
+    res.render("edit-post", {
+      ...post,
+      isLoggedIn: req.session.isLoggedIn,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
