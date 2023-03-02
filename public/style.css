@@ -210,6 +210,10 @@ form input {
    margin: 2%;
 }
 
+#delete-btn:hover {
+    cursor: pointer;
+}
+
 #body-container{
 width:100%;
 }

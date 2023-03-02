@@ -47,7 +47,7 @@ const updateFormHandler = async (event) => {
   
       if (response.ok) {
         // redirect to dashboard
-        document.location.href = "/dashboard";
+        document.location.href = "/";
       } else {
         // console log an error message
         console.log(response.statusText);
