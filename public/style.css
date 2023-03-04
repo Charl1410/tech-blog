@@ -1,7 +1,7 @@
 * {
     padding:0;
     margin:0;
-    background-color: rgb(247, 239, 229);
+    background-color: #EAF6F6;
 }
 
 .d-flex, #profile-form-style, #form-style, footer, 
@@ -10,6 +10,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.card-container, .log-in-container {
+    background-image: url(https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 /* homepage and main styling */
@@ -24,7 +31,7 @@ ul {
     justify-content: center;
     align-items: center;
     height: 5vh;
-    background-color: rgb(232, 207, 176);
+    background-color: #EAF6F6;
     opacity: 70%;
 }
 
@@ -37,18 +44,18 @@ nav li {
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(232, 207, 176) ;
+    background-color:#EAF6F6 ;
 }
 
 nav li a {
     text-decoration: none;
     color: black;
-    background-color:rgb(232, 207, 176);
+    background-color:#EAF6F6;
 }
 
 
 nav {
-    border-bottom: dotted 1px rgb(232, 207, 176);
+    border-bottom: dotted 1px #EAF6F6;
     height:5vh;
 }
 
@@ -63,6 +70,7 @@ nav {
 }
 
 .card {
+    background-color: #EAF6F6;
     width:80%;
     margin:1%;
     border: solid 5px white;
@@ -84,11 +92,12 @@ nav {
 }
 
 .card-container{
+    
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color:rgb(229, 224, 255);
+    /* background-color:rgb(229, 224, 255); */
     border-radius: 10px;
     width:100%;
       
@@ -109,7 +118,7 @@ nav {
 }
 
 button {
-    background-image: linear-gradient( rgb(233, 218, 200), rgb(161, 151, 213));
+    background-image: linear-gradient(#EAF6F6, rgb(161, 151, 213));
     border: 0;
     border-radius: 10px;
     box-sizing: border-box;
@@ -117,7 +126,7 @@ button {
     cursor: pointer;
     font-family: Montserrat,sans-serif;
     font-size: .9em;
-    margin: 5px;
+    margin: 20px;
     padding: 10px 15px;
     text-align: center;
     user-select: none;
@@ -145,7 +154,7 @@ button {
 }
 
 .loaded-comments {
-    border-bottom: solid 1px rgb(203, 200, 200);
+    border-bottom: solid 1px rgb(176, 232, 220);
     margin-top:2%;
 
 
