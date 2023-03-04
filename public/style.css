@@ -136,6 +136,14 @@ button {
     display:none;
 }
 
+.single-post-comments {
+    border-top: solid 2px white;
+    width:80%;
+    padding:3%;
+    margin-top:2%;
+    display:block;
+}
+
 .loaded-comments {
     border-bottom: solid 1px rgb(203, 200, 200);
     margin-top:2%;

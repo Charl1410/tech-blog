@@ -12,11 +12,11 @@
             
                         <p>{{post.post_content}}</p>        
                         <div class="interaction-bar">
-                            <button class="view-comment-btn" id="{{id}}"> View Comments</button>
+                            {{!-- <button class="view-comment-btn" id="{{id}}"> View Comments</button> --}}
                         </div>
                         
 
-                        <div class="comment-section" id="comment-section">
+                        <div class="single-post-comments" id="comment-section">
                                 <div>
                                     <input class="create-comment" id="comment_{{id}}" type="text" placeholder="Create your own comment" />
                                     <button type="button" class="new-comment-form" id="comment_button_{{id}}">Create</button>
