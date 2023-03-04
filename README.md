@@ -8,6 +8,7 @@ https://mvc-posting-blog.herokuapp.com
   * [Instillation](#Instillation)
   * [Usage](#Usage)
   * [Developments](#Developments)
+  * [Screenshots](#Screenshots)
   * [Licence](#License)
   * [Questions](#Questions)
   
