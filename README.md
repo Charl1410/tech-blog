@@ -7,7 +7,7 @@ https://mvc-posting-blog.herokuapp.com
   * [Description](#Description)
   * [Instillation](#Instillation)
   * [Usage](#Usage)
-  * [Future-Development] (#Future Development)
+  * [Development] (#Development)
   * [Licence](#License)
   * [Questions](#Questions)
   
@@ -97,7 +97,7 @@ To run the application: https://mvc-posting-blog.herokuapp.com
 
 ![]()
 
-## Future Developments 
+## Developments 
 * Being able to access the edit post page straight from the dashboard. I struggled to get the is owner data passed through into the dashboard so the button will render in the post-item partial. 
 
 * The view comments button does not work in the dahboard due to the way the specific comment section is targeted in the array using `postID - 1`. This only work in the homepage age the post is is linear just like the number of comment sections present.
