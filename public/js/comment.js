@@ -1,10 +1,7 @@
 const newCommentHandler = async (event) => {
   event.preventDefault();
 
-  console.log("new comment handler")
-
   const id = event.target.id.split('_')[2];
-  console.log(id)
 
   const commentField = document.getElementById('comment_' + id);
   const text = commentField.value.trim();

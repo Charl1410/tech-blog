@@ -3,7 +3,6 @@ const newPostHandler = async (event) => {
   
     const post_title = document.querySelector('#post-name').value.trim();
     const post_content = document.querySelector('#post-desc').value.trim();
-    console.log(post_title, post_content)
 
     if (post_title && post_content) {
       const response = await fetch("/api/posts", {
@@ -14,7 +13,6 @@ const newPostHandler = async (event) => {
         },
       });
 
-      // console.log(name, description + "console log 2")
 
       if (response.ok) {
         document.location.replace('/dashboard');
@@ -25,7 +23,6 @@ const newPostHandler = async (event) => {
   };
   
   const delButtonHandler = async (event) => {
-    console.log('hello')
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   

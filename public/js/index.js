@@ -1,7 +1,5 @@
-console.log('hi')
 
 const commentSection = document.querySelectorAll("#comment-section");
-console.log(commentSection)
 const viewCommentBtns = document.querySelectorAll(".view-comment-btn");
 let commentsVisible = false;
 const editButton = document.querySelectorAll("#edit-post-btn")
@@ -10,7 +8,6 @@ const editButton = document.querySelectorAll("#edit-post-btn")
 function showHideComments(e) {
 
     const postID = e.target.id;
-     console.log(postID)
 
     if(commentsVisible) {
         //this only works for the homepage because the specific comment links to the id by -1 but this is not the
@@ -30,10 +27,8 @@ viewCommentBtns.forEach(function(button) {
 });
 
 editButton.forEach(function(button){
-    console.log('hello')
     button.addEventListener("click", function() {
         const postID = this.dataset.id;
-        console.log(postID);
         window.location.href= "/post/" + postID + "/edit"
     })
 });

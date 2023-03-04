@@ -23,7 +23,6 @@ const updateFormHandler = async (event) => {
         document.location.replace("/dashboard");
       } else {
         // console log an error message
-        console.log(response.statusText);
       }
     }
   };

@@ -19,6 +19,13 @@
     background-size: cover;
 }
 
+.center {
+    text-align:center;
+    font-size: 200%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2%;
+}
+
 /* homepage and main styling */
 
 
@@ -82,9 +89,6 @@ nav {
     box-shadow: 10px 0 10px 0 grey;
 }
 
-.single-post.card {
-
-}
 
 .card:hover {
     transform: scale(1.1);

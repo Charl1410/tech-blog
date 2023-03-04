@@ -40,7 +40,6 @@ router.delete('/:id', withAuth, async (req, res) => {
 
 router.put("/:id", withAuth, async (req, res) => {
   try {
-    console.log(req.body)
     const updatePost = {
       post_title: req.body.post_title,
       post_content: req.body.post_content,

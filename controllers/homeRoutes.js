@@ -28,7 +28,6 @@ router.get("/", async (req, res) => {
       plainPost.isOwner = req.session.user_id === plainPost.user_id;
       return plainPost;
     });
-        console.log(posts);
 
     //rendering through the homepage handlebars passing in posts data
     //passing through logged in data
@@ -70,7 +69,6 @@ router.get("/post/:id", async (req, res) => {
       isOwner: req.session.user_id === post.user_id,
       
     });
-    console.log(post,"this is after the render");
   } catch (err) {
     res.status(500).json(err);
   } 
@@ -109,7 +107,6 @@ router.get('/dashboard', withAuth, async (req, res) => {
     });
 
     const user = userData.get({ plain: true });
-    console.log(user)
 
     res.render('dashboard', {
       ...user,
