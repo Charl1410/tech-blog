@@ -124,30 +124,6 @@ router.get('/dashboard', withAuth, async (req, res) => {
 });
 
 
-//Update Post
-router.put("post/:id", withAuth, async (req, res) => {
-  try {
-    const updatePost = {
-      post_title: req.body.title,
-      post_content: req.body.post_content,
-    };
-
-    const postData = await Post.update(updatePost, {
-      where: {
-        id: req.params.id,
-        user_id: req.session.user_id,
-      },
-    });
-    if (!postData) {
-      res.status(404).json({ message: "No post found with this id!" });
-      return;
-    }
-    res.status(200).json(postData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 //edit post route 
 router.get("/post/:id/edit", withAuth, async (req, res) => {
   try {
