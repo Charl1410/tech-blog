@@ -1,13 +1,20 @@
-#body-container{
-    display:flex;
+# MVC tech blog 
 
-}# 14 Model-View-Controller (MVC): Tech Blog
+https://mvc-posting-blog.herokuapp.com
 
-## Your Task
+ ## Table of contents
 
-Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
+  * [Description](#Description)
+  * [Instillation](#Instillation)
+  * [Usage](#Usage)
+  * [Future-Development] (#Future Development)
+  * [Licence](#License)
+  * [Questions](#Questions)
+  
+## Description
 
-Your task this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+The purpose of this application is to provide users with a social media blog platform specific to coding. Users can view all existing posts from other users as well as create their own account and view their profile. Individual users can generate and view their own posts from their profile as well as seeing them on the homepage once created. Additionally, users can interact with post from other users by commenting! Posts can also be viewed individually in with a large format by clicking the title. Users also have the ability to delete and edit there own posts.
+
 
 ## User Story
 
@@ -55,81 +62,49 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
 
-## Mock-Up
+## Initialisation
+To use this application node.js must be installed: https://nodejs.org/en/download/ <br />
 
-The following animation demonstrates the application functionality:
+**The packages required are:**
+ * **bcrypt**  @5.0.0
+ * **connect-session-sequelize** @7.0.4 
+ * **dotenv** @8.2.0 
+* **express** @4.17.1 
+* **express-handlebars** @5.2.0 
+* **mysql2** @2.2.5 
+* **sequelize** @6.3.5 
 
-![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif) 
+All dependencies should already be in the package.json file and installed through running ```npm i``` in the terminal.
 
-## Getting Started
+## Usage
+To use this application all dependencies must be installed. <br>
 
-Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
+Check out the repo: https://github.com/Charl1410/tech-blog
 
-You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
+To run the application: https://mvc-posting-blog.herokuapp.com
 
-**Note**: The [express-session](https://www.npmjs.com/package/express-session) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
+* The data base must be created by logging into mysql ```mysql -u root -p``` and running the command ```source db/schema.sql```
+* Quit mysql by running the command ```quit;```
+* To seed the data base run ```npm run seed```
+* Finally run ```npm run start``` and navigate to your url route localhost:3001 in your to access the website locally 
+* Or follow this link to access the deployed application through Heroku: 
 
-## Grading Requirements
+## Screenshots 
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+![]()
 
-This Challenge is graded based on the following criteria:
+![]()
 
-### Technical Acceptance Criteria: 40%
+![]()
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+## Future Developments 
+* Being able to access the edit post page straight from the dashboard. I struggled to get the is owner data passed through into the dashboard so the button will render in the post-item partial. 
 
-    * Application’s folder structure follows the Model-View-Controller paradigm.
+* The view comments button does not work in the dahboard due to the way the specific comment section is targeted in the array using `postID - 1`. This only work in the homepage age the post is is linear just like the number of comment sections present.
 
-    * Uses the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views.
+* Users are not currently able to edit or delete comments.
 
-    * Application must be deployed to Heroku.
 
-### Deployment: 32%
+## Licensing 
 
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+This project was not licensed.
