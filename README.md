@@ -92,11 +92,16 @@ To run the application: https://mvc-posting-blog.herokuapp.com
 
 ## Screenshots 
 
-![]()
+![](https://github.com/Charl1410/tech-blog/blob/4cd1e3fa6d0b27da1d057a5d9ee0c7cff008e964/screenshots/Screenshot%202023-03-04%20at%2023.40.23.png)
 
-![]()
+![](https://github.com/Charl1410/tech-blog/blob/4cd1e3fa6d0b27da1d057a5d9ee0c7cff008e964/screenshots/Screenshot%202023-03-04%20at%2023.41.45.png)
 
-![]()
+![](https://github.com/Charl1410/tech-blog/blob/4cd1e3fa6d0b27da1d057a5d9ee0c7cff008e964/screenshots/Screenshot%202023-03-04%20at%2023.42.27.png)
+
+![](https://github.com/Charl1410/tech-blog/blob/4cd1e3fa6d0b27da1d057a5d9ee0c7cff008e964/screenshots/Screenshot%202023-03-04%20at%2023.43.30.png)
+
+![](https://github.com/Charl1410/tech-blog/blob/4cd1e3fa6d0b27da1d057a5d9ee0c7cff008e964/screenshots/Screenshot%202023-03-04%20at%2023.44.18.png)
+
 
 ## Developments 
 * Being able to access the edit post page straight from the dashboard. I struggled to get the is owner data passed through into the dashboard so the button will render in the post-item partial. 
@@ -109,3 +114,8 @@ To run the application: https://mvc-posting-blog.herokuapp.com
 ## Licensing 
 
 This project was not licensed.
+
+## Questions
+
+If you have any questions please email me at:
+charlottegriffinn@hotmail.com
