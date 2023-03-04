@@ -108,15 +108,13 @@ router.get('/dashboard', withAuth, async (req, res) => {
          }]
     });
 
-    
-    
     const user = userData.get({ plain: true });
     console.log(user)
 
     res.render('dashboard', {
       ...user,
       logged_in: true,
-      //isOwner: req.session.user_id === posts.user_id,
+      //isOwner: req.session.user_id === user.user_id,
 
     });
 

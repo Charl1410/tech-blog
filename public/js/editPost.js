@@ -1,15 +1,12 @@
-// Update a post form handler
+//front end request to edit a post 
 const updateFormHandler = async (event) => {
     event.preventDefault();
     if (event.target.hasAttribute("data-id")) {
-      //grab post id
       const id = event.target.getAttribute("data-id");
       // Grab title and post content
       const postContent = document.querySelector(".post-content").value.trim();
       const titletUpdate = document.querySelector(".post-title").value.trim();
-      console.log(postContent);
-      console.log(titletUpdate);
-      console.log({id})
+
       const response = await fetch(`/api/posts/${id}`, {
         method: "PUT",
         body: JSON.stringify({
@@ -57,6 +54,4 @@ const updateFormHandler = async (event) => {
   
   document.querySelector("#delete-btn").addEventListener("click", deletePost);
   
-  document
-    .querySelector("#update-post")
-    .addEventListener("click", updateFormHandler);
+  document.querySelector("#update-post").addEventListener("click", updateFormHandler);
