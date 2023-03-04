@@ -3,7 +3,7 @@
         <div class="card">
 
                                 {{#if isOwner}}
-                                    <button>Edit Post</button>
+                        <span class="material-symbols-outlined" id="edit-post-btn" data-id="{{post.id}}">edit_note</span>
                                 {{/if}}
                                 
                         <p class="blog-title"><a href="/post/{{post.id}}"></a>{{post.post_title}}</p>
@@ -36,4 +36,4 @@
 
 <script src="../js/comment.js" ></script>
 <script type="text/javascript" src="../js/index.js"></script>
-
+<script type="text/javascript" src="/js/editpost.js"></script> 

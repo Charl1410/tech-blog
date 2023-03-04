@@ -30,6 +30,7 @@ viewCommentBtns.forEach(function(button) {
 });
 
 editButton.forEach(function(button){
+    console.log('hello')
     button.addEventListener("click", function() {
         const postID = this.dataset.id;
         console.log(postID);
